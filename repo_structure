@@ -1,0 +1,102 @@
+ai-infra-engineer-training/
+│
+├── README.md
+├── LICENSE
+│
+├── 00_resources/
+│   ├── links.md
+│   ├── papers.md
+│   ├── tools.md
+│   └── glossary.md
+│
+├── 01_gpu_fundamentals/
+│   ├── notes.md
+│   ├── gpu_memory_lab.ipynb
+│   └── benchmarks/
+│       └── fp16_vs_int8.csv
+│
+├── 02_quantization_batching/
+│   ├── notes.md
+│   ├── quantize_model.ipynb
+│   └── plots/
+│       └── latency_vs_batch.png
+│
+├── 03_vllm/
+│   ├── notes.md
+│   ├── vllm_server_setup.md
+│   ├── vllm_bench.ipynb
+│   └── configs/
+│       └── vllm_config.yaml
+│
+├── 04_tensorrt_llm/
+│   ├── notes.md
+│   ├── convert_to_trtllm.md
+│   ├── trtllm_bench.ipynb
+│   └── engine/
+│       └── model.plan
+│
+├── 05_kv_cache_specdec/
+│   ├── notes.md
+│   ├── kv_cache_lab.ipynb
+│   ├── speculative_decoding_lab.ipynb
+│   └── results/
+│       └── throughput_comparison.csv
+│
+├── 06_distributed_training/
+│   ├── notes.md
+│   ├── ddp_training.py
+│   ├── fsdp_training.py
+│   ├── deepspeed_training.py
+│   └── logs/
+│       └── training_runs/
+│
+├── 07_model_serving/
+│   ├── notes.md
+│   ├── fastapi_server/
+│   │   ├── main.py
+│   │   └── requirements.txt
+│   └── k8s/
+│       ├── deployment.yaml
+│       ├── service.yaml
+│       └── hpa.yaml
+│
+├── 08_autoscaling_loadtesting/
+│   ├── notes.md
+│   ├── locustfile.py
+│   ├── k6_script.js
+│   └── results/
+│       └── latency_profiles.csv
+│
+├── 09_vector_db_rag/
+│   ├── notes.md
+│   ├── rag_pipeline.ipynb
+│   ├── chroma_example.py
+│   ├── milvus_example.py
+│   └── evaluation/
+│       └── recall_at_k.csv
+│
+├── 10_prompt_caching_cost_opt/
+│   ├── notes.md
+│   ├── redis_cache_example.py
+│   ├── kv_prefix_cache_demo.ipynb
+│   └── cost_analysis/
+│       └── before_after_cost.csv
+│
+├── 11_observability/
+│   ├── notes.md
+│   ├── opentelemetry_setup.md
+│   ├── tracing_example.py
+│   ├── dashboards/
+│   │   ├── grafana_dashboard.json
+│   │   └── prometheus_rules.yaml
+│   └── logs/
+│
+└── 12_capstone/
+    ├── architecture_diagram.mmd
+    ├── capstone_report.md
+    ├── deployment/
+    │   ├── docker/
+    │   ├── k8s/
+    │   └── terraform/
+    └── benchmarks/
+        └── final_results.csv
