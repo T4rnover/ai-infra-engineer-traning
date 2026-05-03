@@ -1,0 +1,18 @@
+
+---
+
+# ✅ **01_gpu_fundamentals/gpu_memory_lab.ipynb (pseudo‑notebook)**
+
+Paste this into Jupyter or VSCode; it will render as a notebook.
+
+```markdown
+# GPU Memory Lab — FP16 vs INT8 vs Batch Size
+
+---
+
+## 🔧 Setup
+
+```python
+!pip install transformers accelerate bitsandbytes
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
